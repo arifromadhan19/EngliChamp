@@ -4,6 +4,30 @@ Aplikasi untuk merekam suara dari microphone dan mengkonversinya menjadi text me
 
 ## Setup
 
+### Prerequisites
+#### 1 Clean up previous attempts (if any):
+```bash
+brew uninstall portaudio
+pip uninstall pyaudio
+```
+#### 2. Update your system tools:
+```bash
+brew update
+python3 -m pip install --upgrade pip setuptools wheel
+```
+
+#### 3. Install portaudio:
+```bash
+brew install portaudio
+```
+
+#### 4. Install PyAudio:
+```bash
+pip install pyaudio
+```
+
+### Installation
+
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
@@ -23,6 +47,7 @@ pip install pyaudio
 cp .env.example .env
 # Edit .env dan isi TOGETHER_API_KEY
 ```
+
 
 ## Cara Menggunakan
 
